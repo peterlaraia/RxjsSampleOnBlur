@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <h2>Hello {{name}}</h2>
+</div>
+<form [formGroup]="searchForm">
+  <input #searchInput type="text" [formControlName]="'name'"/>
+  {{valueOnBlur}}
+</form>
